@@ -2,10 +2,10 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 
 function DivBY(props) {
-	return <h1>{props.sk} - 's length is Even!  </h1>
+	return <h1>{props.sk} - is divisible by 3</h1>
 }
 function NotDivBY(props) {
-	return <h1>{props.ks} - 's length is Odd!</h1>
+	return <h1>{props.ks} - not divisible by 3!</h1>
 }
 
 function CheckNumber(props) {
@@ -18,4 +18,4 @@ function CheckNumber(props) {
 }
 
 const root = ReactDOM.createRoot(document.getElementById('sk'));
-root.render(<CheckNumber num1="['12','43','5']" />);
+root.render(<CheckNumber num1={[1,2,3]} />);
