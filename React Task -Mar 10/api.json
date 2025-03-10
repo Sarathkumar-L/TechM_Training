@@ -1,0 +1,29 @@
+{
+  "courses": [
+    { "id": 1, "name": "React Basics" },
+    { "id": 2, "name": "Advanced JavaScript" }
+  ],
+  "lessons": [
+    {
+      "id": 1,
+      "courseId": 1,
+      "title": "Introduction to React",
+      "content": "Learn the basics of React.",
+      "videoId": "hn80mWvP-9g"
+    },
+    {
+      "id": 2,
+      "courseId": 1,
+      "title": "React Components",
+      "content": "Understanding components in React.",
+      "videoId": "Y2hgEGPzTZY"
+    },
+    {
+      "id": 3,
+      "courseId": 2,
+      "title": "JavaScript ES6",
+      "content": "Explore new features in ES6.",
+      "videoId": "lkIFF4maKMU"
+    }
+  ]
+}
