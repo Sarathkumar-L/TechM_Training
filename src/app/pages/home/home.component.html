@@ -1,0 +1,55 @@
+<!-- <div class="background-container">
+  <h1>Our Top Courses!!!</h1>
+  <app-service-card
+    *ngFor="let service of serviceslist"
+    [service]="service"
+    (click)="onServiceClick(service.id)"
+  ></app-service-card>
+</div> -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <style>
+        body {
+            background-image: url('https://t3.ftcdn.net/jpg/03/91/46/10/360_F_391461057_5P0BOWl4lY442Zoo9rzEeJU0S2c1WDZR.jpg');
+            background-size: cover; /* Ensures the image covers the entire background */
+            background-position: center; /* Centers the image */
+            background-repeat: no-repeat; /* Prevents the image from repeating */
+            background-attachment: fixed; /* Keeps the image fixed during scrolling */
+            margin: 0; /* Removes default margin */
+            font-family: Arial, sans-serif; /* Sets a default font */
+        }
+
+        h1 {
+            text-align: center;
+            margin: 20px;
+            padding: 10px;
+            color: white; /* Adjust text color for better contrast */
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Adds a shadow for better readability */
+        }
+
+        .content {
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent background for content */
+            border-radius: 8px;
+            max-width: 800px;
+            margin: 0 auto;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body>
+    <h1>Our Top Courses!!!</h1>
+    <div class="content">
+        <app-service-card
+            *ngFor="let service of serviceslist"
+            [service]="service"
+            (click)="onServiceClick(service.id)"
+        ></app-service-card>
+    </div>
+</body>
+</html>
