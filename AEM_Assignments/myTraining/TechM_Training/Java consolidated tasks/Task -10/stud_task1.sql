@@ -1,9 +1,0 @@
-CREATE DATABASE SchoolDB;
-USE SchoolDB;
-
-CREATE TABLE Students (
-    id INT PRIMARY KEY AUTO_INCREMENT,
-    name VARCHAR(100) NOT NULL,
-    age INT NOT NULL,
-    grade VARCHAR(10) NOT NULL
-);

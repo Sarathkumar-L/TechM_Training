@@ -1,9 +1,0 @@
-CREATE DATABASE EmployeeDB;
-USE EmployeeDB;
-
-CREATE TABLE Employees (
-    id INT PRIMARY KEY AUTO_INCREMENT,
-    name VARCHAR(100) NOT NULL,
-    age INT NOT NULL,
-    department VARCHAR(50) NOT NULL
-);
