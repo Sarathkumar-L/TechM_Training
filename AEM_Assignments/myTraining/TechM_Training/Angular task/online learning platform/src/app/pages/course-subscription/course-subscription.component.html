@@ -1,0 +1,26 @@
+<div class="container">
+    <h3>My Subscribed Courses</h3>
+  
+    <!-- Dropdown for filtering courses -->
+    <div class="alert alert-dark" role="alert">
+      Select Course:
+      <select [(ngModel)]="selectedCourse" class="form-select">
+        <option value="All">All</option>
+        <option *ngFor="let category of courseCategories" [value]="category">
+          {{ category }}
+        </option>
+      </select>
+    </div>
+  
+    <!-- List of subscribed courses filtered by the selected course -->
+    <ul class="list-group">
+      <li *ngFor="let course of subscribedCourses | filterCourses:selectedCourse" class="list-group-item">
+        <strong>{{ course.name }}</strong> - {{ course.email }}<br>
+        <em>{{ course.course }}</em>
+      </li>
+    </ul>
+  
+    <div *ngIf="subscribedCourses.length === 0" class="alert alert-info mt-3">
+      You have not subscribed to any courses yet.
+    </div>
+  </div>
